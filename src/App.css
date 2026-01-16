@@ -1,0 +1,128 @@
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f3f4f6;
+  color: #1f2937;
+  overflow: hidden;
+}
+
+.dashboard-container {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background-color: #ffffff;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  z-index: 10;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2563eb;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu-link {
+  text-decoration: none;
+  color: #6b7280;
+  padding: 12px 15px;
+  border-radius: 8px;
+  font-weight: 500;
+  margin-bottom: 5px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: background 0.2s;
+}
+
+.menu-link:hover {
+  background-color: #f3f4f6;
+  color: #2563eb;
+}
+
+.menu-link.active {
+  background-color: #eff6ff;
+  color: #2563eb;
+}
+
+.main-content {
+  flex: 1;
+  position: relative;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+}
+
+.top-bar {
+  height: 60px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+.page-area {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.sidebar-spacer {
+  flex: 1;
+}
+
+.sidebar-footer {
+  padding-top: 20px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.user-email {
+  margin: 0;
+  font-weight: bold;
+  font-size: 0.9rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.btn-logout {
+  background: none;
+  border: none;
+  color: #ef4444;
+  cursor: pointer;
+  padding: 0;
+  font-size: 0.85rem;
+  margin-top: 5px;
+  text-decoration: underline;
+}
+
+.btn-logout:hover {
+  color: #b91c1c; 
+}
+
+.user-avatar {
+  width: 35px;
+  height: 35px;
+  background-color: #2563eb;
+  border-radius: 50%;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.1rem;
+}

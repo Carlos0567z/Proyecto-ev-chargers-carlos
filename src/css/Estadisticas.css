@@ -1,0 +1,86 @@
+.stats-scroll {
+  padding: 30px;
+  overflow-y: auto;
+  height: 100%;
+}
+
+.stats-title {
+  margin-bottom: 25px;
+  color: #111827;
+  margin-top: 0;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.card {
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 12px;
+  border: 1px solid #e5e7eb;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.card-label {
+  color: #6b7280;
+  font-weight: bold;
+  font-size: 0.9rem;
+  display: block;
+}
+
+.big-text {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #111827;
+  margin: 10px 0;
+}
+
+.text-muted {
+  color: #6b7280;
+}
+
+.card-maintenance {
+  border-left: 5px solid #f59e0b;
+}
+
+.maintenance-title {
+  margin-top: 0;
+  color: #b45309;
+}
+
+.maintenance-text {
+  color: #4b5563;
+}
+
+.card-wide {
+  grid-column: span 3;
+}
+
+.grafica-barras {
+  display: flex;
+  align-items: flex-end;
+  height: 150px;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.barra {
+  flex: 1;
+  border-radius: 5px 5px 0 0;
+  background-color: #d1d5db;
+  transition: height 0.3s ease;
+}
+
+.barra-active {
+  background-color: #2563eb;
+}
+
+.chart-labels {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  color: #6b7280;
+}
